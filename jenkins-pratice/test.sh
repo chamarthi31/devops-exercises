@@ -1,6 +1,8 @@
 #!/bin/bash
 
-if ./app.sh | grep -q "Build completed successfully"; then
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+if "$SCRIPT_DIR/app.sh" | grep -q "Build completed successfully"; then
     echo "TEST PASSED"
     exit 0
 else
