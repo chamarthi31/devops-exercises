@@ -10,4 +10,3 @@ echo "Version     : $VERSION"
 
 echo ""
 echo "Build completed successfully"
-Poll SCM test
